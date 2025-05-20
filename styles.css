@@ -300,3 +300,22 @@ body {
   0% { transform: rotate(0deg) scale(1); }
   100% { transform: rotate(360deg) scale(1); }
 }
+/* Methods Page Styles */
+.methods-main {
+  max-width: 800px;
+  margin: 70px auto 40px auto;
+  background: var(--main-bg);
+  border-radius: var(--main-radius);
+  box-shadow: var(--main-shadow);
+  padding: 40px 30px;
+}
+.methods-list {
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin: 2em auto;
+  max-width: 600px;
+}
+.methods-list li {
+  margin-bottom: 1em;
+}
