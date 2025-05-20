@@ -12,7 +12,7 @@ The site is made up of several HTML pages:
 - **experiences.html** – showcases transformative experiences
 - **contact.html** – provides contact information
 
-Navigation between these pages is handled by **banner.js**, which injects a common banner at the top of each page.
+Each page includes a shared navigation banner at the top so visitors can easily move between sections.
 
 ## Viewing Locally
 
