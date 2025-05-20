@@ -348,6 +348,15 @@ body {
   box-shadow: var(--parchment-shadow);
   margin-bottom: 2em;
 }
+.plant-img {
+  display: block;
+  margin: 0 auto 1em auto;
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
 .plant-section h4 {
   margin-top: 0;
   color: var(--text-secondary);
