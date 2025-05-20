@@ -107,18 +107,19 @@ body {
   }
 }
 
-.mission-main {
-  max-width: 900px;
-  margin: 56px auto 0 auto;
+/* Shared styles for page containers */
+.main-content {
+  margin: 70px 10px 40px 10px;
   background: var(--main-bg);
   border-radius: var(--main-radius);
   box-shadow: var(--main-shadow);
+  padding: 40px 30px;
+}
+
+.mission-main {
+  max-width: 900px;
   padding: 48px 38px 56px 38px;
-  margin-top: 70px;
   margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-family: 'IM Fell English', 'Georgia', serif;
 }
 .mission-header h1 {
   font-size: 2.5em;
@@ -303,11 +304,6 @@ body {
 /* Methods Page Styles */
 .methods-main {
   max-width: 800px;
-  margin: 70px auto 40px auto;
-  background: var(--main-bg);
-  border-radius: var(--main-radius);
-  box-shadow: var(--main-shadow);
-  padding: 40px 30px;
 }
 .methods-list {
   text-align: left;
@@ -323,11 +319,6 @@ body {
 /* Contact Page Styles */
 .contact-main {
   max-width: 600px;
-  margin: 70px auto 40px auto;
-  background: var(--main-bg);
-  border-radius: var(--main-radius);
-  box-shadow: var(--main-shadow);
-  padding: 40px 30px;
 }
 
 .contact-form {
