@@ -370,6 +370,16 @@ body {
   background: var(--accent-hover);
 }
 
+/* Login Page Styles */
+.login-main {
+  max-width: 400px;
+}
+
+.login-message {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
 /* Experiences Page Styles */
 .experiences-main {
   max-width: 900px;

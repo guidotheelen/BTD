@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Beyond the Doors</title>
+  <meta name="description" content="Login to Beyond the Doors" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+  <header class="banner">
+    <a href="index.html"><img src="assets/BTD-head.png" alt="Beyond The Doors Banner Logo" class="banner-logo small-logo" /></a>
+    <nav class="nav-links">
+      <a href="mission.html">Mission</a>
+      <a href="methods.html">Methods</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" id="login-link">Login</a>
+    </nav>
+  </header>
+  <main id="login-root" class="main-content login-main"></main>
+  <script type="text/babel">
+    function LoginForm() {
+      const [username, setUsername] = React.useState('');
+      const [password, setPassword] = React.useState('');
+      const [message, setMessage] = React.useState('');
+      React.useEffect(() => {
+        const currentUser = localStorage.getItem('btdUsername');
+        if (currentUser) {
+          setMessage(`Logged in as ${currentUser}`);
+        }
+      }, []);
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        if (username && password) {
+          localStorage.setItem('btdUsername', username);
+          setMessage(`Logged in as ${username}`);
+          setUsername('');
+          setPassword('');
+        } else {
+          setMessage('Please enter username and password');
+        }
+      };
+      const handleLogout = () => {
+        localStorage.removeItem('btdUsername');
+        setMessage('Logged out');
+      };
+      if (message.startsWith('Logged in as')) {
+        return (
+          <div className="login-form-container">
+            <h1>{message}</h1>
+            <button onClick={handleLogout}>Logout</button>
+          </div>
+        );
+      }
+      return (
+        <div className="login-form-container">
+          <h1>Login</h1>
+          <form onSubmit={handleSubmit} className="contact-form">
+            <label htmlFor="username">Username</label>
+            <input id="username" type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+            <label htmlFor="password">Password</label>
+            <input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <button type="submit">Login</button>
+          </form>
+          {message && <p className="login-message">{message}</p>}
+        </div>
+      );
+    }
+    ReactDOM.render(<LoginForm />, document.getElementById('login-root'));
+  </script>
+  <script src="login.js"></script>
+</body>
+</html>
