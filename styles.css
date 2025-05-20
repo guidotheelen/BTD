@@ -296,15 +296,6 @@ body {
   animation: spiral-rotate 120s linear infinite;
 }
 
-.spiral-rings {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 0;
-}
-
 @keyframes spiral-rotate {
   0% { transform: rotate(0deg) scale(1); }
   100% { transform: rotate(360deg) scale(1); }
