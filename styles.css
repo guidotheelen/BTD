@@ -294,7 +294,7 @@ body {
   border-radius: 100%;
   position: relative;
   z-index: 1;
-  animation: spiral-rotate 120s linear infinite;
+  animation: spiral-rotate 240s linear infinite;
 }
 
 @keyframes spiral-rotate {
