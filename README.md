@@ -1,6 +1,6 @@
 # Beyond the Doors
 
-This repository contains the source for the "Beyond the Doors" static site. The project explores psychedelic journeys and includes pages describing the mission, methods and ways to get in touch.
+This repository contains the source for the "Beyond the Doors" static site. The project explores psychedelic journeys and includes pages describing the mission, methods, a preparation guide, and ways to get in touch.
 
 ## Pages
 
@@ -10,6 +10,7 @@ The site is made up of several HTML pages:
 - **mission.html** – outlines the vision behind the project
 - **methods.html** – explains the approach and stages of the journey
 - **experiences.html** – showcases transformative experiences
+- **guide.html** – offers preparation and integration tips for journeys
 - **contact.html** – provides contact information
 
 Each page includes a shared navigation banner at the top so visitors can easily move between sections.
