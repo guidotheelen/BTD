@@ -382,14 +382,14 @@ body {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1.5em;
-  display: block;
-  overflow-x: auto;
+  table-layout: fixed;
 }
 .method-table th,
 .method-table td {
   border: 1px solid #ccc;
   padding: 8px 10px;
   font-size: 1.05em;
+  word-break: break-word;
 }
 .method-table th {
   background: var(--parchment-bg-light);
@@ -398,6 +398,23 @@ body {
 .methods-footer {
   text-align: center;
   margin-top: 3em;
+}
+
+@media (max-width: 480px) {
+  .methods-header h1 {
+    font-size: 1.7em;
+  }
+  .methods-subheader {
+    font-size: 1.05em;
+  }
+  .plant-section {
+    padding: 15px;
+  }
+  .method-table th,
+  .method-table td {
+    font-size: 0.95em;
+    padding: 6px 8px;
+  }
 }
 /* Contact Page Styles */
 .contact-main {
