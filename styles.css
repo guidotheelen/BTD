@@ -14,6 +14,13 @@
   --text-secondary: #5a4a1a;
 }
 
+/* Ensure padding and border are included in element width */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -375,6 +382,8 @@ body {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1.5em;
+  display: block;
+  overflow-x: auto;
 }
 .method-table th,
 .method-table td {
