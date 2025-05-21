@@ -475,3 +475,24 @@ body {
   font-size: 1.1em;
   line-height: 1.7;
 }
+
+/* Guide Page Styles */
+.guide-main {
+  max-width: 800px;
+}
+
+.guide-section {
+  margin-bottom: 2.5em;
+  text-align: left;
+}
+
+.guide-section h3 {
+  font-size: 1.3em;
+  color: var(--text-secondary);
+  margin-bottom: 0.6em;
+}
+
+.guide-section p {
+  font-size: 1.1em;
+  line-height: 1.7;
+}
