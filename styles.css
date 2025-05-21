@@ -466,31 +466,90 @@ body {
   max-width: 900px;
 }
 
-.experiences-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  margin-top: 2em;
+.experiences-header h1 {
+  font-size: 2.3em;
+  margin-bottom: 0.4em;
+  text-align: center;
 }
 
-.experience-item {
-  flex: 1 1 260px;
-  background: var(--parchment-bg);
-  border-radius: var(--parchment-radius);
-  box-shadow: var(--parchment-shadow);
-  padding: 24px;
+.experiences-subheader {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #6a5d3b;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.experiences-section {
+  margin-bottom: 3em;
   text-align: left;
 }
 
-.experience-item h2 {
-  margin-top: 0;
-  color: var(--text-secondary);
-  font-size: 1.3em;
+.phenomena-list {
+  list-style: none;
+  padding: 0;
 }
 
-.experience-item p {
+.phenomena-list li {
+  margin-bottom: 1.6em;
+}
+
+.phenomena-list h4 {
+  margin: 0 0 0.3em 0;
+  color: var(--text-secondary);
+  font-size: 1.2em;
+}
+
+.phenomena-list p {
+  margin: 0.2em 0;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+.experiences-columns .columns {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 1.4em;
+}
+
+.experiences-columns .column {
+  flex: 1 1 260px;
+  background: var(--parchment-bg);
+  border-radius: var(--parchment-radius);
+  padding: 20px;
+  box-shadow: var(--parchment-shadow);
+  min-width: 220px;
+}
+
+.experiences-columns .column h4 {
+  margin-top: 0;
+  color: var(--text-secondary);
+  font-size: 1.15em;
+  margin-bottom: 0.6em;
+}
+
+.experiences-columns ul {
+  margin: 0.6em 0 0.2em 1.2em;
+  padding: 0;
+}
+
+.experiences-columns li {
+  margin-bottom: 0.6em;
+  font-size: 1.05em;
+}
+
+.experience-quote {
+  font-style: italic;
+  text-align: center;
+  margin: 1.8em auto;
   font-size: 1.1em;
-  line-height: 1.7;
+  max-width: 80%;
+}
+
+.experiences-footer {
+  text-align: center;
+  margin-top: 3em;
 }
 
 /* Guide Page Styles */
