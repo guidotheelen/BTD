@@ -572,3 +572,88 @@ body {
   font-size: 1.1em;
   line-height: 1.7;
 }
+.guide-header h1 {
+  font-size: 2.3em;
+  margin-bottom: 0.4em;
+  text-align: center;
+}
+.guide-subheader {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #6a5d3b;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.guide-portrait {
+  display: block;
+  margin: 0 auto 1.6em auto;
+  max-width: 250px;
+  width: 100%;
+  border-radius: 6px;
+  filter: grayscale(100%);
+  box-shadow: var(--parchment-shadow);
+}
+.core-principles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-between;
+  margin-bottom: 1.6em;
+}
+.core-principles .principle {
+  flex: 1 1 240px;
+  min-width: 220px;
+  background: var(--parchment-bg);
+  border-radius: var(--parchment-radius);
+  padding: 20px;
+  box-shadow: var(--parchment-shadow);
+}
+.core-principles .principle h4 {
+  margin-top: 0;
+  color: var(--text-secondary);
+  font-size: 1.15em;
+  margin-bottom: 0.5em;
+}
+.core-principles .principle p {
+  margin: 0;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+.training-list {
+  columns: 2 300px;
+  column-gap: 40px;
+  list-style: disc outside;
+  margin-left: 20px;
+}
+.training-list li {
+  margin-bottom: 0.8em;
+  font-size: 1.1em;
+}
+.expect-list {
+  list-style: none;
+  padding: 0;
+}
+.expect-list li {
+  position: relative;
+  padding-left: 1.4em;
+  margin-bottom: 0.6em;
+  font-size: 1.1em;
+}
+.expect-list li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+.guide-quote {
+  font-style: italic;
+  text-align: center;
+  margin: 2em auto;
+  font-size: 1.1em;
+  max-width: 80%;
+}
+.guide-footer {
+  text-align: center;
+  margin-top: 3em;
+}
