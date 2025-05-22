@@ -402,6 +402,16 @@ body {
   font-size: 1.05em;
   word-break: break-word;
 }
+.method-table .intensity-col {
+  width: 40px;
+  text-align: center;
+}
+.method-table .intensity-col .intensity-icon {
+  margin-right: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .method-table th {
   background: var(--parchment-bg-light);
   color: var(--text-secondary);
