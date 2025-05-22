@@ -123,6 +123,17 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+  .banner {
+    font-size: 0.8rem;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+}
+
 /* Shared styles for page containers */
 .main-content {
   margin: 70px 10px 40px 10px;
@@ -459,6 +470,20 @@ body {
 
 .contact-form button:hover {
   background: var(--accent-hover);
+}
+
+/* Location Page Styles */
+.location-main {
+  max-width: 700px;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin: 1em 0;
+  border-radius: var(--parchment-radius);
+  box-shadow: var(--parchment-shadow);
 }
 
 /* Experiences Page Styles */
