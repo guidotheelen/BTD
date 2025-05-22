@@ -519,6 +519,16 @@ body {
   margin-bottom: 1.6em;
 }
 
+.phenomenon-img {
+  display: block;
+  margin-bottom: 0.6em;
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
 .phenomena-list h4 {
   margin: 0 0 0.3em 0;
   color: var(--text-secondary);
