@@ -514,27 +514,65 @@ body {
   text-align: left;
 }
 
+.experiences-section h3 {
+  font-size: 1.35em;
+  color: var(--text-secondary);
+  margin-bottom: 1em;
+  text-align: center;
+}
+
 .phenomena-list {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  counter-reset: phenomenon;
 }
 
 .phenomena-list li {
-  margin-bottom: 1.6em;
+  position: relative;
+  counter-increment: phenomenon;
+  background: var(--parchment-bg);
+  border-radius: var(--parchment-radius);
+  box-shadow: var(--parchment-shadow);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phenomena-list li::before {
+  content: counter(phenomenon);
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: var(--main-shadow);
 }
 
 .phenomenon-img {
   display: block;
-  margin-bottom: 0.6em;
-  max-width: 220px;
+  margin: 0 auto 0.6em auto;
+  max-width: 200px;
   width: 100%;
   height: auto;
   border-radius: 6px;
+  box-shadow: var(--parchment-shadow);
   object-fit: cover;
 }
 
 .phenomena-list h4 {
-  margin: 0 0 0.3em 0;
+  margin: 0.4em 0 0.3em 0;
   color: var(--text-secondary);
   font-size: 1.2em;
 }
