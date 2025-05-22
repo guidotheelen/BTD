@@ -411,6 +411,29 @@ body {
   margin-top: 3em;
 }
 
+.intensity-icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.intensity-low { background: #6bbf59; }
+.intensity-moderate { background: #e7d84b; }
+.intensity-medium { background: #f39c3d; }
+.intensity-high { background: #d9604b; }
+
+.intensity-legend {
+  margin-top: 0.6em;
+  font-size: 0.9em;
+  text-align: left;
+}
+.intensity-legend .legend-item {
+  margin-right: 12px;
+  white-space: nowrap;
+}
+
 @media (max-width: 480px) {
   .methods-header h1 {
     font-size: 1.7em;
