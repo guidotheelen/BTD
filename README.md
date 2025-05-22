@@ -12,6 +12,7 @@ The site is made up of several HTML pages:
 - **experiences.html** – showcases transformative experiences
 - **guide.html** – offers preparation and integration tips for journeys
 - **contact.html** – provides contact information
+- **location.html** – shows where our retreats take place
 
 Each page includes a shared navigation banner at the top so visitors can easily move between sections.
 
