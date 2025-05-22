@@ -421,6 +421,10 @@ body {
   .plant-section {
     padding: 15px;
   }
+  .plant-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .method-table th,
   .method-table td {
     font-size: 0.95em;
