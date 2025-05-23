@@ -629,6 +629,14 @@ body {
   object-fit: cover;
 }
 
+.phenomenon-sun {
+  display: block;
+  width: 30%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .phenomena-list h4 {
   margin: 0.4em 0 0.3em 0;
   color: var(--text-secondary);
