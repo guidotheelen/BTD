@@ -184,6 +184,7 @@ body {
   border-radius: var(--main-radius);
   box-shadow: var(--main-shadow);
   padding: 40px 30px;
+  min-width: 300px;
 }
 
 .mission-main {
