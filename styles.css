@@ -801,6 +801,27 @@ body {
   margin-top: 3em;
 }
 
+/* Costs Page Styles */
+.costs-main {
+  max-width: 600px;
+}
+
+.costs-section {
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+.costs-list {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 1.5em;
+}
+
+.costs-list li {
+  padding: 0.4em 0;
+  font-size: 1.1em;
+}
+
 .page-footer {
   text-align: center;
   margin-top: 3em;
