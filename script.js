@@ -6,4 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
       nav.classList.toggle('open');
     });
   }
+
+  // Highlight the active page in the navigation
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach((link) => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    }
+  });
 });
