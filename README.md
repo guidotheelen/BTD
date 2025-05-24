@@ -11,9 +11,9 @@ The site is made up of several HTML pages:
 - **methods.html** – explains the approach and stages of the journey
 - **experiences.html** – showcases transformative experiences
 - **guide.html** – offers preparation and integration tips for journeys
-- **costs.html** – lists pricing for sessions and retreats
+- **costs.html** – lists pricing for guided and group sessions
 - **contact.html** – provides contact information
-- **location.html** – shows where our retreats take place
+- **location.html** – shows where our sessions take place
 
 Each page includes a shared navigation banner at the top so visitors can easily move between sections.
 
