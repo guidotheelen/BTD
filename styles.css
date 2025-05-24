@@ -829,9 +829,29 @@ body {
   max-width: 600px;
 }
 
+.costs-header h1 {
+  font-size: 2.3em;
+  margin-bottom: 0.4em;
+  text-align: center;
+}
+
+.costs-subheader {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-bottom: 1.8em;
+  text-align: center;
+}
+
 .costs-section {
   margin-bottom: 2em;
   text-align: left;
+}
+
+.costs-section h3 {
+  font-size: 1.3em;
+  color: var(--text-secondary);
+  margin-bottom: 0.6em;
 }
 
 .costs-list {
