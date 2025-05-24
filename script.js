@@ -27,9 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Group session calendar on the costs page
-  function renderCalendar(containerId, year, month, sessionDays) {
+  function renderCalendar(containerId, year, month, schedule) {
     const container = document.getElementById(containerId);
     if (!container) return;
+
+    container.innerHTML = '';
 
     const monthNames = [
       'January','February','March','April','May','June',
@@ -40,11 +42,23 @@ document.addEventListener('DOMContentLoaded', function() {
     calendar.className = 'calendar';
 
     const caption = document.createElement('caption');
-    caption.textContent = `${monthNames[month]} ${year}`;
+
+    const prev = document.createElement('span');
+    prev.textContent = '\u25C0';
+    prev.className = 'month-nav';
+    const label = document.createElement('span');
+    label.textContent = `${monthNames[month]} ${year}`;
+    const next = document.createElement('span');
+    next.textContent = '\u25B6';
+    next.className = 'month-nav';
+
+    caption.appendChild(prev);
+    caption.appendChild(label);
+    caption.appendChild(next);
     calendar.appendChild(caption);
 
     const headerRow = document.createElement('tr');
-    const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    const days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
     days.forEach(d => {
       const th = document.createElement('th');
       th.textContent = d;
@@ -54,11 +68,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let date = new Date(year, month, 1);
     let row = document.createElement('tr');
-    for (let i = 0; i < date.getDay(); i++) {
+    for (let i = 0; i < (date.getDay() + 6) % 7; i++) {
       row.appendChild(document.createElement('td'));
     }
 
     const monthLength = new Date(year, month + 1, 0).getDate();
+    const sessionDays = schedule[month] || [];
     for (let day = 1; day <= monthLength; day++) {
       if (row.children.length === 7) {
         calendar.appendChild(row);
@@ -77,10 +92,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     calendar.appendChild(row);
     container.appendChild(calendar);
+
+    prev.addEventListener('click', () => {
+      const d = new Date(year, month - 1, 1);
+      renderCalendar(containerId, d.getFullYear(), d.getMonth(), schedule);
+    });
+    next.addEventListener('click', () => {
+      const d = new Date(year, month + 1, 1);
+      renderCalendar(containerId, d.getFullYear(), d.getMonth(), schedule);
+    });
   }
 
   if (document.getElementById('session-calendar')) {
-    // Example group session dates for July 2024
-    renderCalendar('session-calendar', 2024, 6, [6, 20]);
+    const schedule = {
+      6: [6, 20]
+    }; // example session dates
+    renderCalendar('session-calendar', 2024, 0, schedule);
   }
 });
