@@ -624,7 +624,8 @@ body {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* Use a smaller minimum width so cards stack neatly on small screens */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 32px;
   counter-reset: phenomenon;
 }
