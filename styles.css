@@ -135,7 +135,7 @@ body {
 
   .nav-links {
     position: absolute;
-    top: 60px;
+    top: 100%;
     left: 0;
     right: 0;
     background: rgba(244, 236, 216, 0.95);
