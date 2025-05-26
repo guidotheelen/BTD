@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <rect width="400" height="250" fill="#a9d1b5" />
+  <!-- sky -->
+  <rect width="400" height="120" fill="#88c0e6" />
+  <!-- boardwalk -->
+  <polygon points="150,250 250,250 210,100 190,100" fill="#c2a176" />
+  <!-- handrails -->
+  <polygon points="190,100 210,100 225,50 175,50" fill="#8b6e4e" />
+  <polygon points="150,250 170,250 175,50 155,50" fill="#8b6e4e" />
+  <polygon points="230,250 250,250 225,50 245,50" fill="#8b6e4e" />
+</svg>
