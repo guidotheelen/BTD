@@ -866,42 +866,6 @@ body {
   font-size: 1.1em;
 }
 
-.calendar {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5em 0;
-}
-
-.calendar caption {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
-
-.calendar .month-nav {
-  cursor: pointer;
-  padding: 0 0.5em;
-}
-
-.calendar th,
-.calendar td {
-  border: 1px solid #ccc;
-  padding: 6px;
-  text-align: center;
-}
-
-.calendar th {
-  background: var(--parchment-bg-light);
-  color: var(--text-secondary);
-}
-
-.calendar .session-day {
-  background: var(--accent);
-  color: #fff;
-  font-weight: bold;
-}
 
 .page-footer {
   text-align: center;
