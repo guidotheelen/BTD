@@ -403,6 +403,26 @@ body {
   margin-bottom: 3em;
   text-align: left;
 }
+.methods-intro {
+  background: var(--parchment-bg-light);
+  padding: 1.8em;
+  border-radius: var(--parchment-radius);
+  box-shadow: var(--parchment-shadow);
+}
+.methods-intro h3 {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.4em;
+  margin-top: 0;
+}
+.methods-intro p {
+  font-size: 1.1em;
+  line-height: 1.75;
+}
+.methods-intro .methods-list {
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+}
 .plant-section {
   background: var(--parchment-bg);
   border-radius: var(--parchment-radius);
