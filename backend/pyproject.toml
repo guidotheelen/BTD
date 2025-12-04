@@ -1,0 +1,11 @@
+[project]
+name = "btd-backend"
+version = "0.1.0"
+description = "Django backend for Beyond the Doors product API"
+requires-python = ">=3.10"
+dependencies = [
+    "Django>=4.2,<5.0",
+]
+
+[tool.uv]
+dev-dependencies = []

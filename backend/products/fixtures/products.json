@@ -1,0 +1,56 @@
+[
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "slug": "integration-journal",
+      "name": "Integration Journal",
+      "description": "A guided, lay-flat journal built for pre-work, ceremony notes, and integration with plenty of room for sketches.",
+      "price": "24.00",
+      "badge": "Best for reflection",
+      "category": "Journals",
+      "image": "assets/icons/integration.png",
+      "features": [
+        "120gsm cream pages with a soft-touch cover and ribbon marker",
+        "Prompts for intention setting, navigation, and after-care reflections",
+        "Lay-flat binding so you can write comfortably anywhere"
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "slug": "field-safety-kit",
+      "name": "Field Safety Kit",
+      "description": "A compact pouch with the safety basics for respectful journeys at home or in the field.",
+      "price": "68.00",
+      "badge": "Best for preparedness",
+      "category": "Kits",
+      "image": "assets/icons/safety.png",
+      "features": [
+        "Grounding prompts, pulse oximeter sleeve, and comfort mask",
+        "Dropper bottle labels and a laminated safety plan card",
+        "Space for essentials: electrolytes, chewing gum, soft earplugs"
+      ]
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "slug": "cue-card-pack",
+      "name": "Cue Card Pack",
+      "description": "Pocket-sized cards with calming cues for the sitter and explorer when the moment gets wobbly.",
+      "price": "18.00",
+      "badge": "Best for the middle of the trip",
+      "category": "Guides",
+      "image": "assets/icons/ready.png",
+      "features": [
+        "15 double-sided cards with grounding, breathing, and re-entry cues",
+        "Wipe-clean finish; comes with a minimal lanyard for quick access",
+        "Space to jot key reminders so helpers stay aligned"
+      ]
+    }
+  }
+]
