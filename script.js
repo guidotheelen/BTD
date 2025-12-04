@@ -25,6 +25,4 @@ document.addEventListener('DOMContentLoaded', function() {
       link.classList.add('active');
     }
   });
-
-  // Group session calendar removed
 });
